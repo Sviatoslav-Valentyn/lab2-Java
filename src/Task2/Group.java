@@ -4,12 +4,12 @@ import java.util.List;
 
 public class Group {
     private List<Student> students;
-    private List<TypesOfSubject> typesOfSubject;
+    private List<Subject> subjects;
     private String name;
 
-    public Group(final List<Student> students, final List<TypesOfSubject> typesOfSubject, final String name) {
+    public Group(final List<Student> students, final List<Subject> subjects, final String name) {
         this.students = students;
-        this.typesOfSubject = typesOfSubject;
+        this.subjects = subjects;
         this.name = name;
     }
 
@@ -21,12 +21,12 @@ public class Group {
         this.students = students;
     }
 
-    public List<TypesOfSubject> getTypesOfSubject() {
-        return typesOfSubject;
+    public List<Subject> getSubject() {
+        return subjects;
     }
 
-    public void setTypesOfSubject(final List<TypesOfSubject> typesOfSubject) {
-        this.typesOfSubject = typesOfSubject;
+    public void setSubject(final List<Subject> typesOfSubject) {
+        this.subjects = subjects;
     }
 
     public String getName() {
@@ -41,7 +41,7 @@ public class Group {
     public String toString() {
         return "Group{" +
                 "name='" + name +
-                ", typesOfSubject=" + typesOfSubject +
+                ", subjects=" + subjects +
                 ", students=" + students + '\'' +
                 '}';
     }

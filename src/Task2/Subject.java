@@ -1,16 +1,13 @@
 package Task2;
 
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDate;
 
 public class Subject {
     private String name;
-    private Mark mark;
-    private Date date;
+    private LocalDate date;
 
-    public Subject(final String name, final Mark mark, final Date date) {
+    public Subject(final String name, final LocalDate date) {
         this.name = name;
-        this.mark = mark;
         this.date = date;
     }
 
@@ -22,19 +19,11 @@ public class Subject {
         this.name = name;
     }
 
-    public Mark getMark() {
-        return mark;
-    }
-
-    public void setMark(final Mark mark) {
-        this.mark = mark;
-    }
-
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(final Date date) {
+    public void setDate(final LocalDate date) {
         this.date = date;
     }
 
@@ -42,7 +31,6 @@ public class Subject {
     public String toString() {
         return "Subject{" +
                 "name=" + name +
-                "--" + mark +
                 ", date=" + date +
                 '}' + "\n";
     }

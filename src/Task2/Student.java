@@ -6,13 +6,12 @@ import java.util.List;
 public class Student {
     private List<Subject> subjects;
     private String fullName;
+    private Mark mark;
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(final String fullName) {
+    public Student(final List<Subject> subjects, final String fullName, final Mark mark) {
+        this.subjects = subjects;
         this.fullName = fullName;
+        this.mark = mark;
     }
 
     public List<Subject> getSubjects() {
@@ -23,16 +22,28 @@ public class Student {
         this.subjects = subjects;
     }
 
-    public Student(final String fullName, final List<Subject> subjects) {
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(final String fullName) {
         this.fullName = fullName;
-        this.subjects = subjects;
+    }
+
+    public Mark getMark() {
+        return mark;
+    }
+
+    public void setMark(final Mark mark) {
+        this.mark = mark;
     }
 
     @Override
     public String toString() {
         return "Student{\n" +
                 "fullName=\n" + fullName +
-                "\nsubjects=\n" + subjects + '\'' +
+                "\nsubjects=\n" + subjects +
+                "Rating:" + mark +
                 '}';
     }
 }
