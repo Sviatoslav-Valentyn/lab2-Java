@@ -1,6 +1,6 @@
 package Task2;
 
-
+import java.time.LocalDate;
 import java.util.List;
 
 public class Student {
@@ -38,6 +38,14 @@ public class Student {
         this.mark = mark;
     }
 
+    public void addSubject(final String subject) {
+        final LocalDate date;
+        date = null;
+        subjects.add(new Subject(subject, null)); }
+    public void addSubject(final Subject subject)
+    {
+        subjects.add(subject);
+    }
     @Override
     public String toString() {
         return "Student{\n" +
