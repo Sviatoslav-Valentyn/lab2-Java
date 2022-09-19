@@ -58,7 +58,7 @@ public class Task3 {
         System.out.println(Lviv_Polytechnic);
 
         final AddSubject subjectService = new AddSubject(Lviv_Polytechnic);
-        subjectService.addSubject("IT-21", "History");
+        subjectService.addSubject("IT-21", "History2");
         System.out.println(Lviv_Polytechnic);
 
         final AddDate addDate = new AddDate(Lviv_Polytechnic);
