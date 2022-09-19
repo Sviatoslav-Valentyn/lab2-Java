@@ -48,7 +48,12 @@ public class Task4 {
 
         System.out.println(Lviv_Polytechnic);
 
-        final AssessmentJournal assessmentJournal = new AssessmentJournal("IT-21", Lviv_Polytechnic);
+        final AssessmentJournal assessmentJournal = new AssessmentJournal(Lviv_Polytechnic);
+        for{ }
+        assessmentJournal.getMarksStudents()
+
+
+
         assessmentJournal.changeMark("Hamaiunov Oleksandr", new Mark(5));
 
     }

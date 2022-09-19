@@ -66,8 +66,8 @@ public class Task3 {
         addDate.addDate("IT-21", "History", date);
         System.out.println(Lviv_Polytechnic);
 
-        final AlphabeticalOrderOfStudents consoleService = new AlphabeticalOrderOfStudents(Lviv_Polytechnic);
-        consoleService.alphabeticalOrderOfStudents("IT-21");
+        final AlphabeticalOrderOfStudents sortStudent = new AlphabeticalOrderOfStudents(Lviv_Polytechnic);
+        sortStudent.alphabeticalOrderOfStudents("IT-21");
         System.out.println();
 
         final VisitingSubjects visitingSubjects = new VisitingSubjects(Lviv_Polytechnic);
