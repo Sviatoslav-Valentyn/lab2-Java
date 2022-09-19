@@ -1,5 +1,4 @@
 package Task1;
-import java.util.NoSuchElementException;
 
 public class Task1 {
     public static<T> void Iterable(final Iterable<T> iterable) {
